@@ -1,12 +1,19 @@
 <template>
   <div class="home">
-    <img alt="Vue logo" src="../assets/logo.png" />
-    <h1>Welcome to Your Vue.js App</h1>
+    <foodEntryComponent />
+    <historyComponent />
   </div>
 </template>
 
 <script>
+import historyComponent from "../components/HistoryComponent.vue";
+import foodEntryComponent from "../components/FoodEntryComponent.vue";
 export default {
-  name: "home"
+  name: "home",
+
+  components: {
+    historyComponent,
+    foodEntryComponent
+  }
 };
 </script>
