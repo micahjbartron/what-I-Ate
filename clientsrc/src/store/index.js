@@ -25,7 +25,16 @@ export default new Vuex.Store({
     }
   },
   actions: {
-    setBearer({}, bearer) {
+
+    async addFoodEntry({ commit, dispatch }, data) {
+      try {
+        let res = await 
+
+      } catch (error) {
+
+      }
+    },
+    setBearer({ }, bearer) {
       api.defaults.headers.authorization = bearer;
     },
     resetBearer() {

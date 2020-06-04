@@ -1,9 +1,9 @@
 import mongoose from "mongoose";
-import ValueSchema from "../models/Value";
+import DaySchema from "../models/Day";
 import ProfileSchema from "../models/Profile";
 
 class DbContext {
-  Values = mongoose.model("Value", ValueSchema);
+  Day = mongoose.model("Day", DaySchema);
   Profile = mongoose.model("Profile", ProfileSchema);
 }
 
